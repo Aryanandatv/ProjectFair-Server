@@ -1,0 +1,65 @@
+NODE JS NOTES:
+
+--runtime enviroment for JS
+
+
+--Export and Import [import:require('package/module'),exports:module.exports,exports.content]
+
+1.fs              -these are building modules
+2.url
+3.http   
+4.nodemailer
+
+nodemon- A node.js tool for realtime reloading of running  programs based on changes 
+           
+           npm i -g nodemon
+
+
+
+ EventEmitter -event
+ Process - the process object provides information about and control over the curent Node.js process.
+
+ --enviromental variables
+ -env
+   DATABASE="hdvchc"          
+   process.env.DATABASE
+
+
+---Framework:express.js
+       npm i express
+
+---CORS-Cross Origin Resource sharing   
+       npm i cors
+---DOTenv-a package for loading .env content into process object in node.js
+       npm i dotenv
+
+
+Software architectures:
+  1.MVC-model view controller--eg.serverside,angular,react,django
+  2.MVT-model view template-react (frond end)
+
+
+
+  ---JWT--- Json web token
+
+  *mechanism used for authentication
+  *need json webtoken package
+  *generate a token value if the given credentials for authentication is valid ,and pass it to user side
+  *every request from user side after authentication will need token value with it, b/c only after verifying that token,
+  will follow to request  resolving
+  * uses sign() method for token generation.
+  *uses verify() method for token verification
+
+
+
+
+Middleware:
+special funtion that can process requests in b/w client and server and block the request  if they needed to 
+
+const Middleware=(req,res,next)=>{
+       req
+       next()
+}
+
+Types:
+   1.
